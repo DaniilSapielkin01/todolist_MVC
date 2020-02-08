@@ -1,0 +1,63 @@
+.todolist {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 30px;
+    border: 1px solid gray
+}
+
+.task {
+    border: 1px solid #eee;
+    margin: 5px 0;
+    padding: 3px;
+    border-radius: 3px;
+    transition: all .2s ease;
+}
+/* 
+.task:hover {
+    background-color: #eee
+} */
+
+.todolist .task .icon-cancel {
+    float: right;
+    color: tomato;
+    cursor: pointer;
+    display: inline-block;
+    display: none;
+    margin-top: 2px;
+
+}
+
+.todolist .task:hover .icon-cancel {
+    display: inline-block;
+}
+
+.icon {
+    display: inline-flex;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-right: 5px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+}
+
+.done {
+    background-color: rgb(189, 189, 189);
+}
+
+.done .text {
+    text-decoration: line-through;
+}
+
+.icon-ok {
+    opacity: .5;
+}
+
+.icon-active {
+    opacity: .9;
+    cursor: pointer;
+    color: rgb(8, 179, 8);
+}
