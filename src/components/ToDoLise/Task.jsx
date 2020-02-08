@@ -16,7 +16,7 @@ export class Task extends React.Component {
   toggleTaskIsDone(task) {
     let newTask = {
       ...this.state.task,
-      isDone: !this.state.task.isDone
+      isDone: !this.state.task.isDone 
     };
     this.setState({
       task: newTask

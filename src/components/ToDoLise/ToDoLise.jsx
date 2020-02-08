@@ -2,6 +2,7 @@ import React from "react";
 
 import "./ToDoLise.css";
 import { Task } from "./Task";
+import { ToDoListFooter } from "./ToDoListFooter";
 
 export class ToDoList extends React.Component {
   constructor(props) {
@@ -54,6 +55,9 @@ export class ToDoList extends React.Component {
               deleteTask={this.deleteTask.bind(this)}
             />
           ))}
+        </div>
+        <div className="footer">
+          <ToDoListFooter />
         </div>
       </div>
     );
